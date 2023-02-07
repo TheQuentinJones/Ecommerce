@@ -26,8 +26,10 @@ router.get('/:id', async (req, res) => {
     if (!categoryData) {
       res.status(404).json({ message: 'No category found with that id!'});
       return;
+    } else {
+      res.status(200).json(categoryData);
     }
-    res.status(200).json(categoryData);
+    
   } catch (err) {
     res.status(500).json(err);
   }
@@ -70,7 +72,7 @@ router.delete('/:id', async (req, res) => {
     },
   });
   
-  res.json(deletedCategory);
+  // res.json(deletedCategory);
 });
 
 module.exports = router;
