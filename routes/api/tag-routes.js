@@ -61,7 +61,12 @@ router.put('/:id', async (req, res) => {
       },
     }
   );
-  res.json(updatedTag);
+  if (!updatedTag) {
+    res.status(404).json({ message: 'No Tag found with that id!'});
+    return;
+  } else {
+    res.status(200).json({ message: 'Tag successfully updated!'});
+  }  
 });
 
 router.delete('/:id', async (req, res) => {
@@ -71,8 +76,14 @@ router.delete('/:id', async (req, res) => {
       id: req.params.id,
     },
   });
+
+  if (!deletedTag) {
+    res.status(404).json({ message: 'No Tag found with that id!'});
+    return;
+  } else {
+    res.status(200).json({ message: 'Tag successfully deleted!'});
+  }  
   
-  res.json(deletedTag);
 });
 
 module.exports = router;
