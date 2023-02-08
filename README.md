@@ -30,6 +30,14 @@
 
   https://drive.google.com/file/d/1EK8GR6dy8Dh9TiBKwIgKxHZcPtRsCCc4/view
 
+![Terminal while using application](./images/terminal%20screenshot.jpg)
+
+
+![Insomnia while using application](./images/insomnia%20screenshot.jpg)
+
+
+![DBeaver while using application](./images/DBeaver%20screenshot.jpg)
+
   ## License
 
   MIT License
