@@ -28,6 +28,8 @@
 
   This project is used by first creating the database and seeding it with the provided information or your own information, then using the routes indicated to view, create, update, and delete items from the database. I will include a video tutorial on how this application works below.
 
+  https://drive.google.com/file/d/1EK8GR6dy8Dh9TiBKwIgKxHZcPtRsCCc4/view
+
   ## License
 
   MIT License
